@@ -94,13 +94,45 @@ const AboutPage = () => {
                   </Button>
                 </div>
               </div>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+                <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                 I'm a passionate full-stack developer with over 5 years of experience creating
                 digital solutions that make a real impact. I specialize in modern web technologies
                 and love turning complex problems into simple, elegant solutions. When I'm not coding,
                 you'll find me exploring new technologies, contributing to open source, or hiking
                 the beautiful trails around San Francisco.
               </p>
+              
+              {/* Resume Preview */}
+              <div className="bg-card border rounded-lg p-6 max-w-2xl mx-auto">
+                <h3 className="text-xl font-bold mb-4 flex items-center">
+                  <Download className="h-5 w-5 mr-2" />
+                  Resume
+                </h3>
+                <div className="space-y-3 text-sm">
+                  <div>
+                    <h4 className="font-semibold">Alex Johnson</h4>
+                    <p className="text-muted-foreground">Senior Full Stack Developer</p>
+                    <p className="text-muted-foreground">San Francisco, CA | alex@example.com</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Experience Highlights</h4>
+                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                      <li>5+ years of full-stack development</li>
+                      <li>Led teams of 5+ developers</li>
+                      <li>Improved performance by 40% through optimization</li>
+                      <li>Built applications serving 1M+ users</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Key Technologies</h4>
+                    <p className="text-muted-foreground">React, TypeScript, Node.js, Python, AWS, Docker</p>
+                  </div>
+                </div>
+                <Button className="w-full mt-4">
+                  <Download className="mr-2 h-4 w-4" />
+                  Download Full Resume (PDF)
+                </Button>
+              </div>
             </motion.div>
           </div>
         </section>

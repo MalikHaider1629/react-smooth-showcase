@@ -63,11 +63,13 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
+            <Button variant="outline" size="sm" className="ml-4">
+              Download Resume
+            </Button>
             <Button
               variant="ghost"
               size="icon"
               onClick={toggleTheme}
-              className="ml-4"
             >
               {darkMode ? <Sun size={20} /> : <Moon size={20} />}
             </Button>
