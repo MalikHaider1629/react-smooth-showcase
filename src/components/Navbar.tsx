@@ -3,6 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import avatarImage from '@/assets/avatar.jpg';
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -38,8 +40,12 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="font-bold text-xl gradient-text">
-            Portfolio
+          <Link to="/" className="flex items-center space-x-3 font-bold text-xl gradient-text">
+            <Avatar className="h-8 w-8">
+              <AvatarImage src={avatarImage} alt="Profile" />
+              <AvatarFallback>JD</AvatarFallback>
+            </Avatar>
+            <span>John Doe</span>
           </Link>
 
           {/* Desktop Navigation */}
